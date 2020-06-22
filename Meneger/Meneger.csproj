@@ -1,0 +1,1016 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C305B89F-AE71-41FF-970A-44B4DB65CD47}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Meneger</RootNamespace>
+    <AssemblyName>Meneger</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Hopstarter-Sleek-Xp-Basic-Money.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework">
+      <HintPath>C:\Users\strik\source\repos\WindowsFormsApp6\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auction.Designer.cs">
+      <DependentUpon>Auction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackGround.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BackGround.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Banks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Banks.Designer.cs">
+      <DependentUpon>Banks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="briefcase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="briefcase.Designer.cs">
+      <DependentUpon>briefcase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chance.Designer.cs">
+      <DependentUpon>Chance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompaniesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompaniesForm.Designer.cs">
+      <DependentUpon>CompaniesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data.cs" />
+    <Compile Include="DealForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DealForm.Designer.cs">
+      <DependentUpon>DealForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Debugging.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Debugging.Designer.cs">
+      <DependentUpon>Debugging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exchangepic.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Exchangepic.resx</DependentUpon>
+    </Compile>
+    <Compile Include="FinExchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinExchange.Designer.cs">
+      <DependentUpon>FinExchange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForceMajor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForceMajor.Designer.cs">
+      <DependentUpon>ForceMajor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoInfo.Designer.cs">
+      <DependentUpon>GoInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IconsRes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IconsRes.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Information.Designer.cs">
+      <DependentUpon>Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Location.Designer.cs">
+      <DependentUpon>Location.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogForm.Designer.cs">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Newgame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newgame.Designer.cs">
+      <DependentUpon>Newgame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="office.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="office.Designer.cs">
+      <DependentUpon>office.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Res.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Res.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Soundres.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Soundres.resx</DependentUpon>
+    </Compile>
+    <Compile Include="stock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stock.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TvCompanyPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TvCompanyPay.Designer.cs">
+      <DependentUpon>TvCompanyPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TvCompForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TvCompForm.Designer.cs">
+      <DependentUpon>TvCompForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auction.resx">
+      <DependentUpon>Auction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackGround.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BackGround.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Banks.resx">
+      <DependentUpon>Banks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="briefcase.resx">
+      <DependentUpon>briefcase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chance.resx">
+      <DependentUpon>Chance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompaniesForm.resx">
+      <DependentUpon>CompaniesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DealForm.resx">
+      <DependentUpon>DealForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Debugging.resx">
+      <DependentUpon>Debugging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exchangepic.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Exchangepic.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinExchange.resx">
+      <DependentUpon>FinExchange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForceMajor.resx">
+      <DependentUpon>ForceMajor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoInfo.resx">
+      <DependentUpon>GoInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IconsRes.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IconsRes.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Information.resx">
+      <DependentUpon>Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location.resx">
+      <DependentUpon>Location.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogForm.resx">
+      <DependentUpon>LogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newgame.resx">
+      <DependentUpon>Newgame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="office.resx">
+      <DependentUpon>office.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Res.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Res.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Soundres.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Soundres.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stock.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>stock.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TvCompanyPay.resx">
+      <DependentUpon>TvCompanyPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TvCompForm.resx">
+      <DependentUpon>TvCompForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Auction.datasource" />
+    <None Include="Properties\DataSources\BackGround.datasource" />
+    <None Include="Properties\DataSources\Banks.datasource" />
+    <None Include="Properties\DataSources\briefcase.datasource" />
+    <None Include="Properties\DataSources\Chance.datasource" />
+    <None Include="Properties\DataSources\CompaniesForm.datasource" />
+    <None Include="Properties\DataSources\data.datasource" />
+    <None Include="Properties\DataSources\DealForm.datasource" />
+    <None Include="Properties\DataSources\Debugging.datasource" />
+    <None Include="Properties\DataSources\Exchangepic.datasource" />
+    <None Include="Properties\DataSources\FinExchange.datasource" />
+    <None Include="Properties\DataSources\Force.datasource" />
+    <None Include="Properties\DataSources\GoInfo.datasource" />
+    <None Include="Properties\DataSources\IconsRes.datasource" />
+    <None Include="Properties\DataSources\Information.datasource" />
+    <None Include="Properties\DataSources\Locationmy.datasource" />
+    <None Include="Properties\DataSources\LogForm.datasource" />
+    <None Include="Properties\DataSources\Main.datasource" />
+    <None Include="Properties\DataSources\Main.SoundP.datasource" />
+    <None Include="Properties\DataSources\Meneger.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Meneger.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Newgame.datasource" />
+    <None Include="Properties\DataSources\office.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Res.datasource" />
+    <None Include="Properties\DataSources\Soundres.datasource" />
+    <None Include="Properties\DataSources\Start.datasource" />
+    <None Include="Properties\DataSources\stock.datasource" />
+    <None Include="Properties\DataSources\TvCompanyPay.datasource" />
+    <None Include="Properties\DataSources\TvCompForm.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\off15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\for15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ch15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kosti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kosti.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="mainlib\mainlib\mainlib.csproj">
+      <Project>{95e13197-39c5-44e3-9cc9-06ab6a62696c}</Project>
+      <Name>mainlib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="soundres\open.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="soundres\open.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\placamajor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gavaiostrov.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\piazza-del-popolo-rim.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\granvia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taiti.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fidgi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delpopolo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\santangelo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patzavenecii.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trafalgar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waitholl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oxfordstreet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piatnitskaya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ohotnyriad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tverskaya.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bulvar-madlen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eleseiskie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Saint_Denis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Braitonbeach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aveniy.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ulica-uoll-strit-02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yamato.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minato.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\iconfinder_hotel-hostel-architecture_and_city-vacations-buildings-holidays_4059750.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\iconfinder_house-05_2140006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\iconfinder_man-02_5085406.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\housesmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\Hotelsmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\iconfinder_Delete_1493279.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\iconfinder_emblem-nowrite_24698.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="icons\iconfinder_Finance_loan_money_1889199.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newstart.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\go.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forcemag.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AviaComp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvtoComp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GDComp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Re.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newgo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Dice_128401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_forward_arrows_arrow_front_go_blue_1872773.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_HourGlass_49248.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Briefcase-64_32060.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Hourglass_34227.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_icon_sandclock_48883.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kosti.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_alliance_45276.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_money_299107.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_package_games_board_1436.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_4_2694134.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_money_299107 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\office.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Bank_22907.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\auction.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_auction_hammer_gavel_63869.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Stock Index Up_27881.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\five.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\four.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\two.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_airplane_1120625.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_gift-box_307357.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_growth_3890929.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_tv_3650.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_13_1751359.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_info_3855623.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Stocks_201350.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\18x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\23x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\28x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_14_3319630.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_bank_45348.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Arrows_Refresh_Replace_Round_Circle_1329089.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_indian_man_male_person_4043256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_male3_403019.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_exit_28363.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_b_6_2578279.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_511_student__notes_books__student_notes_4212903.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder__Gotcha_1337481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_10_61474.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_12_play_store_google_android_game_service_marketplace_2109120.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_ark2_3294.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_exit_17364.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_floppy_285657.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_floppy_disk_save_103863.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Help_1493288.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_load_download_48773.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_logo_orange_play_googleplay_5463660.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_preferences-system_118842.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Technorati_54528.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_viral-video-bomb-hot-new-product_3993850.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Lifebuoy_669949.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hopstarter-Sleek-Xp-Basic-Money.ico" />
+    <None Include="Resources\ab.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

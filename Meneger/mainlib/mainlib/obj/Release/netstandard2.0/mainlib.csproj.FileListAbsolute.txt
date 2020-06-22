@@ -1,0 +1,9 @@
+D:\My Projects\Менеджер\Meneger\Meneger\mainlib\mainlib\bin\Release\netstandard2.0\mainlib.deps.json
+D:\My Projects\Менеджер\Meneger\Meneger\mainlib\mainlib\bin\Release\netstandard2.0\mainlib.dll
+D:\My Projects\Менеджер\Meneger\Meneger\mainlib\mainlib\bin\Release\netstandard2.0\mainlib.pdb
+D:\My Projects\Менеджер\Meneger\Meneger\mainlib\mainlib\obj\Release\netstandard2.0\mainlib.csprojAssemblyReference.cache
+D:\My Projects\Менеджер\Meneger\Meneger\mainlib\mainlib\obj\Release\netstandard2.0\mainlib.csproj.CoreCompileInputs.cache
+D:\My Projects\Менеджер\Meneger\Meneger\mainlib\mainlib\obj\Release\netstandard2.0\mainlib.AssemblyInfoInputs.cache
+D:\My Projects\Менеджер\Meneger\Meneger\mainlib\mainlib\obj\Release\netstandard2.0\mainlib.AssemblyInfo.cs
+D:\My Projects\Менеджер\Meneger\Meneger\mainlib\mainlib\obj\Release\netstandard2.0\mainlib.dll
+D:\My Projects\Менеджер\Meneger\Meneger\mainlib\mainlib\obj\Release\netstandard2.0\mainlib.pdb
